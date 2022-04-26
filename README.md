@@ -5,7 +5,7 @@ Repository to host a DSL for modeling multi-layered and self-adapting IoT system
 
 You can find in this repository the DSL implemented in MPS, a sandbox model of an example mine (Figure 1 shows the mine structure model) with an IoT system, including a control point, sensors, actuators, nodes (edge, fog, and cloud), and adaptation rules. You can also find the generated code for K3S (lightweight Kubernetes distribution) in [this directory](https://github.com/SOM-Research/IoT-Mining-DSL/tree/main/languages/Mining/sandbox/source_gen/Mining/sandbox).
 
-<img src="/blob/main/images/mine-structure-model.png" alt="Mine structure model" caption="Fig 1. Mine structure model" style="height: 80%; width:80%;"/>
+<img src="/images/mine-structure-model.png" alt="Mine structure model" caption="Fig 1. Mine structure model" style="height: 80%; width:80%;"/>
 
 The metamodel (concrete syntax) of the DSL is summarised in the following Figure.
 
