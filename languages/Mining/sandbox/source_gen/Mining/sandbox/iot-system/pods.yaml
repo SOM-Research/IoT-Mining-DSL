@@ -1,0 +1,150 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C_1
+  labels:
+    app: App1
+spec:
+  containers:
+    - name: C_1
+      image: iot-system/app1
+      resources:
+        limits:
+          memory: "0Mi"
+          cpu: "0m"
+        requests:
+          memory: "500Mi"
+          cpu: "500m"
+      ports:
+      - containerPort: 8000
+
+
+
+  nodeSelector:
+    node: edge_01
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C_2
+  labels:
+    app: App2
+spec:
+  containers:
+    - name: C_2
+      image: iot-system/app2
+      resources:
+        limits:
+          memory: "0Mi"
+          cpu: "0m"
+        requests:
+          memory: "700Mi"
+          cpu: "700m"
+      ports:
+      - containerPort: 8081
+
+
+
+  nodeSelector:
+    node: edge_01
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C_3
+  labels:
+    app: App1
+spec:
+  containers:
+    - name: C_3
+      image: iot-system/app1
+      resources:
+        limits:
+          memory: "0Mi"
+          cpu: "0m"
+        requests:
+          memory: "500Mi"
+          cpu: "500m"
+      ports:
+      - containerPort: 8000
+
+
+
+  nodeSelector:
+    node: edge_02
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C_4
+  labels:
+    app: App1
+spec:
+  containers:
+    - name: C_4
+      image: iot-system/app1
+      resources:
+        limits:
+          memory: "0Mi"
+          cpu: "0m"
+        requests:
+          memory: "500Mi"
+          cpu: "500m"
+      ports:
+      - containerPort: 8000
+
+
+
+  nodeSelector:
+    node: edge_03
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C_5
+  labels:
+    app: App2
+spec:
+  containers:
+    - name: C_5
+      image: iot-system/app2
+      resources:
+        limits:
+          memory: "0Mi"
+          cpu: "0m"
+        requests:
+          memory: "700Mi"
+          cpu: "700m"
+      ports:
+      - containerPort: 8081
+
+
+
+  nodeSelector:
+    node: edge_03
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C_6
+  labels:
+    app: App3
+spec:
+  containers:
+    - name: C_6
+      image: iot-system/app3
+      resources:
+        limits:
+          memory: "0Mi"
+          cpu: "0m"
+        requests:
+          memory: "2000Mi"
+          cpu: "1000m"
+      ports:
+      - containerPort: 8090
+
+
+
+  nodeSelector:
+    node: fog_01
+---

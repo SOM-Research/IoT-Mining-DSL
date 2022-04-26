@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mqtt-exporter-config
+  namespace: monitoring
+data:
+  conf.yaml: |
+    # MQTT All values default to paho.mqtt.client defaults
+    mqtt:
+      host:      '192.168.10.10'
+      port:       30023
+
+    metrics:
+      - name:     'room_ch4'
+        help:     'Topic room/ch4'
+        type:     'gauge'
+        topic:    'room/ch4'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'room_co2'
+        help:     'Topic room/co2'
+        type:     'gauge'
+        topic:    'room/co2'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'room_co'
+        help:     'Topic room/co'
+        type:     'gauge'
+        topic:    'room/co'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'room_alarm'
+        help:     'Topic room/alarm'
+        type:     'gauge'
+        topic:    'room/alarm'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
