@@ -51,7 +51,7 @@ public final class Node__BehaviorDescriptor extends BaseBHDescriptor {
     for (SNode c : SLinkOperations.getChildren(__thisNode__, LINKS.containers$eu$n)) {
       cpu = cpu + SPropertyOperations.getInteger(c, PROPS.cpuLimit$PhFS);
     }
-    return (SPropertyOperations.getInteger(__thisNode__, PROPS.cpuCores$iGom) - cpu);
+    return ((SPropertyOperations.getInteger(__thisNode__, PROPS.cpuCores$iGom) * 1000) - cpu);
   }
 
   /*package*/ Node__BehaviorDescriptor() {

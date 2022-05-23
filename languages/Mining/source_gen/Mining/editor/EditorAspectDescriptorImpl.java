@@ -112,7 +112,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 43:
         return Collections.<ConceptEditor>singletonList(new Topic_Editor());
       case 44:
-        return Collections.<ConceptEditor>singletonList(new Volume_Editor());
+        return Arrays.asList(new ConceptEditor[]{new Volume_Editor(), new Volume_tabular_Editor()});
       case 45:
         return Collections.<ConceptEditor>singletonList(new WorkerReference_Editor());
       case 46:

@@ -45,16 +45,16 @@ public class QueriesGenerated extends QueryProviderBase {
     return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Availability");
   }
   public static boolean rule_Condition_3_1(final BaseMappingRuleContext _context) {
-    return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "CPU");
+    return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "CPU consumption");
   }
   public static boolean rule_Condition_3_2(final BaseMappingRuleContext _context) {
-    return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Ram");
+    return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Ram memory consumption");
   }
   public static boolean rule_Condition_3_3(final BaseMappingRuleContext _context) {
-    return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Network_throughput_in") || Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Network_throughput_out");
+    return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Network throughput in") || Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Network throughput out");
   }
   public static boolean rule_Condition_3_4(final BaseMappingRuleContext _context) {
-    return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Disk_space");
+    return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Used disk space");
   }
   public static Object propertyMacro_GetValue_0_0(final PropertyMacroContext _context) {
     return String.valueOf(Math.random());
@@ -273,15 +273,24 @@ public class QueriesGenerated extends QueryProviderBase {
     return SNodeOperations.getNextSibling(_context.getNode()) != null;
   }
   public static boolean ifMacro_Condition_1_0(final IfMacroContext _context) {
-    return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.volumes$EF4i)).isNotEmpty();
+    return SPropertyOperations.getInteger(_context.getNode(), PROPS.memoryLimit$Pi9U) != 0 || SPropertyOperations.getInteger(_context.getNode(), PROPS.cpuLimit$PhFS) != 0;
   }
   public static boolean ifMacro_Condition_1_1(final IfMacroContext _context) {
-    return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.subPath$eZhP));
+    return SPropertyOperations.getInteger(_context.getNode(), PROPS.memoryLimit$Pi9U) != 0;
   }
   public static boolean ifMacro_Condition_1_2(final IfMacroContext _context) {
-    return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.volumes$EF4i)).isNotEmpty();
+    return SPropertyOperations.getInteger(_context.getNode(), PROPS.cpuLimit$PhFS) != 0;
   }
   public static boolean ifMacro_Condition_1_3(final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.volumes$EF4i)).isNotEmpty();
+  }
+  public static boolean ifMacro_Condition_1_4(final IfMacroContext _context) {
+    return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.subPath$eZhP));
+  }
+  public static boolean ifMacro_Condition_1_5(final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.volumes$EF4i)).isNotEmpty();
+  }
+  public static boolean ifMacro_Condition_1_6(final IfMacroContext _context) {
     return isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.subPath$eZhP));
   }
   public static boolean ifMacro_Condition_3_0(final IfMacroContext _context) {
@@ -345,6 +354,9 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.expr$bjkt);
   }
   public static SNode sourceNodeQuery_3_6(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.expr$bjkt);
+  }
+  public static SNode sourceNodeQuery_3_7(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.expr$bjkt);
   }
   public static Iterable<SNode> sourceNodesQuery_0_0(final SourceSubstituteMacroNodesContext _context) {
@@ -447,6 +459,7 @@ public class QueriesGenerated extends QueryProviderBase {
     snqMethods.put("999840695446132632", new SNQ(i++));
     snqMethods.put("999840695445806938", new SNQ(i++));
     snqMethods.put("999840695446027338", new SNQ(i++));
+    snqMethods.put("8510706739519159851", new SNQ(i++));
     snqMethods.put("999840695445874958", new SNQ(i++));
     snqMethods.put("999840695445893507", new SNQ(i++));
     snqMethods.put("6313570324824863050", new SNQ(i++));
@@ -502,6 +515,8 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.sourceNodeQuery_3_5(ctx);
         case 17:
           return QueriesGenerated.sourceNodeQuery_3_6(ctx);
+        case 18:
+          return QueriesGenerated.sourceNodeQuery_3_7(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -795,6 +810,9 @@ public class QueriesGenerated extends QueryProviderBase {
     imcMethods.put("1490801959943287197", new IfMC(i++));
     imcMethods.put("1490801959943774618", new IfMC(i++));
     imcMethods.put("1490801959943871961", new IfMC(i++));
+    imcMethods.put("8510706739516858610", new IfMC(i++));
+    imcMethods.put("8510706739516894234", new IfMC(i++));
+    imcMethods.put("8510706739516909589", new IfMC(i++));
     imcMethods.put("9061738871699471515", new IfMC(i++));
     imcMethods.put("3242290259270038605", new IfMC(i++));
     imcMethods.put("9061738871699710181", new IfMC(i++));
@@ -846,10 +864,16 @@ public class QueriesGenerated extends QueryProviderBase {
         case 13:
           return QueriesGenerated.ifMacro_Condition_1_3(ctx);
         case 14:
-          return QueriesGenerated.ifMacro_Condition_3_0(ctx);
+          return QueriesGenerated.ifMacro_Condition_1_4(ctx);
         case 15:
-          return QueriesGenerated.ifMacro_Condition_3_1(ctx);
+          return QueriesGenerated.ifMacro_Condition_1_5(ctx);
         case 16:
+          return QueriesGenerated.ifMacro_Condition_1_6(ctx);
+        case 17:
+          return QueriesGenerated.ifMacro_Condition_3_0(ctx);
+        case 18:
+          return QueriesGenerated.ifMacro_Condition_3_1(ctx);
+        case 19:
           return QueriesGenerated.ifMacro_Condition_6_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for if macro %s (key: #%d)", ctx.getTemplateReference(), methodKey));

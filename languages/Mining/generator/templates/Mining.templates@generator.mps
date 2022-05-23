@@ -52,6 +52,9 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -1994,6 +1997,38 @@
                     <node concept="356sEF" id="2NYVsZUGwds" role="356sEH">
                       <property role="TrG5h" value="limits:" />
                     </node>
+                    <node concept="1W57fq" id="7os6F0sre3M" role="lGtFl">
+                      <node concept="3IZrLx" id="7os6F0sre3N" role="3IZSJc">
+                        <node concept="3clFbS" id="7os6F0sre3O" role="2VODD2">
+                          <node concept="3clFbF" id="7os6F0sre4c" role="3cqZAp">
+                            <node concept="22lmx$" id="7os6F0srhW6" role="3clFbG">
+                              <node concept="3y3z36" id="7os6F0srlIu" role="3uHU7w">
+                                <node concept="3cmrfG" id="7os6F0srlLv" role="3uHU7w">
+                                  <property role="3cmrfH" value="0" />
+                                </node>
+                                <node concept="2OqwBi" id="7os6F0srjgE" role="3uHU7B">
+                                  <node concept="30H73N" id="7os6F0srj1F" role="2Oq$k0" />
+                                  <node concept="3TrcHB" id="7os6F0srkgj" role="2OqNvi">
+                                    <ref role="3TsBF5" to="40ag:7yx6XIbi1MY" resolve="cpuLimit" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3y3z36" id="7os6F0srhqg" role="3uHU7B">
+                                <node concept="2OqwBi" id="7os6F0sreiq" role="3uHU7B">
+                                  <node concept="30H73N" id="7os6F0sre4b" role="2Oq$k0" />
+                                  <node concept="3TrcHB" id="7os6F0srf_L" role="2OqNvi">
+                                    <ref role="3TsBF5" to="40ag:7yx6XIbi1N0" resolve="memoryLimit" />
+                                  </node>
+                                </node>
+                                <node concept="3cmrfG" id="7os6F0srhQV" role="3uHU7w">
+                                  <property role="3cmrfH" value="0" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node concept="356sEK" id="2NYVsZUGxA5" role="383Ya9">
                     <node concept="356sEQ" id="2NYVsZUGxHB" role="356sEH">
@@ -2029,6 +2064,25 @@
                         <node concept="356sEF" id="2NYVsZUGxP9" role="356sEH">
                           <property role="TrG5h" value="Mi&quot;" />
                         </node>
+                        <node concept="1W57fq" id="7os6F0srmKq" role="lGtFl">
+                          <node concept="3IZrLx" id="7os6F0srmKr" role="3IZSJc">
+                            <node concept="3clFbS" id="7os6F0srmKs" role="2VODD2">
+                              <node concept="3clFbF" id="7os6F0srmQ9" role="3cqZAp">
+                                <node concept="3y3z36" id="7os6F0srp9r" role="3clFbG">
+                                  <node concept="3cmrfG" id="7os6F0srpA6" role="3uHU7w">
+                                    <property role="3cmrfH" value="0" />
+                                  </node>
+                                  <node concept="2OqwBi" id="7os6F0srn4n" role="3uHU7B">
+                                    <node concept="30H73N" id="7os6F0srmQ8" role="2Oq$k0" />
+                                    <node concept="3TrcHB" id="7os6F0sro2R" role="2OqNvi">
+                                      <ref role="3TsBF5" to="40ag:7yx6XIbi1N0" resolve="memoryLimit" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                       <node concept="356sEK" id="2NYVsZUGzz2" role="383Ya9">
                         <node concept="356sEF" id="2NYVsZUGzz3" role="356sEH">
@@ -2061,6 +2115,25 @@
                           <property role="TrG5h" value="m&quot;" />
                         </node>
                         <node concept="2EixSi" id="2NYVsZUGzz4" role="2EinRH" />
+                        <node concept="1W57fq" id="7os6F0srqwl" role="lGtFl">
+                          <node concept="3IZrLx" id="7os6F0srqwm" role="3IZSJc">
+                            <node concept="3clFbS" id="7os6F0srqwn" role="2VODD2">
+                              <node concept="3clFbF" id="7os6F0srqA4" role="3cqZAp">
+                                <node concept="3y3z36" id="7os6F0srsTm" role="3clFbG">
+                                  <node concept="3cmrfG" id="7os6F0srtm1" role="3uHU7w">
+                                    <property role="3cmrfH" value="0" />
+                                  </node>
+                                  <node concept="2OqwBi" id="7os6F0srqOi" role="3uHU7B">
+                                    <node concept="30H73N" id="7os6F0srqA3" role="2Oq$k0" />
+                                    <node concept="3TrcHB" id="7os6F0srrMM" role="2OqNvi">
+                                      <ref role="3TsBF5" to="40ag:7yx6XIbi1MY" resolve="cpuLimit" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                     <node concept="2EixSi" id="2NYVsZUGxA7" role="2EinRH" />
@@ -3011,7 +3084,7 @@
           <node concept="3clFbF" id="Rw9t2G1F9$" role="3cqZAp">
             <node concept="17R0WA" id="Rw9t2G1GQs" role="3clFbG">
               <node concept="Xl_RD" id="Rw9t2G1GZc" role="3uHU7w">
-                <property role="Xl_RC" value="CPU" />
+                <property role="Xl_RC" value="CPU consumption" />
               </node>
               <node concept="2OqwBi" id="Rw9t2G1FRs" role="3uHU7B">
                 <node concept="2OqwBi" id="Rw9t2G1Fnd" role="2Oq$k0">
@@ -3036,7 +3109,7 @@
         <node concept="356sEK" id="Rw9t2G1Y$6" role="gfFT$">
           <node concept="2EixSi" id="Rw9t2G1Y$7" role="2EinRH" />
           <node concept="356sEF" id="Rw9t2G1Y$8" role="356sEH">
-            <property role="TrG5h" value="node_memory_MemAvailable_bytes{node_hostname=&quot;" />
+            <property role="TrG5h" value="(node_memory_MemAvailable_bytes{node_hostname=&quot;" />
           </node>
           <node concept="356sEF" id="Rw9t2G1Y$9" role="356sEH">
             <property role="TrG5h" value="node" />
@@ -3055,8 +3128,28 @@
               </node>
             </node>
           </node>
-          <node concept="356sEF" id="Rw9t2G1Y$b" role="356sEH">
-            <property role="TrG5h" value="&quot;} / node_memory_MemTotal_bytes{node_hostname=&quot;" />
+          <node concept="356sEF" id="7os6F0szZLM" role="356sEH">
+            <property role="TrG5h" value="&quot;} - node_memory_MemTotal_bytes{node_hostname=&quot;" />
+          </node>
+          <node concept="356sEF" id="7os6F0szZSD" role="356sEH">
+            <property role="TrG5h" value="node" />
+            <node concept="29HgVG" id="7os6F0szZSE" role="lGtFl">
+              <node concept="3NFfHV" id="7os6F0szZSF" role="3NFExx">
+                <node concept="3clFbS" id="7os6F0szZSG" role="2VODD2">
+                  <node concept="3clFbF" id="7os6F0szZSH" role="3cqZAp">
+                    <node concept="2OqwBi" id="7os6F0szZSI" role="3clFbG">
+                      <node concept="30H73N" id="7os6F0szZSJ" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="7os6F0szZSK" role="2OqNvi">
+                        <ref role="3Tt5mk" to="40ag:5c6$$01D87z" resolve="expr" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="356sEF" id="7os6F0szZLN" role="356sEH">
+            <property role="TrG5h" value="&quot;) / node_memory_MemTotal_bytes{node_hostname=&quot;" />
           </node>
           <node concept="356sEF" id="Rw9t2G1Y$c" role="356sEH">
             <property role="TrG5h" value="node" />
@@ -3085,7 +3178,7 @@
           <node concept="3clFbF" id="Rw9t2G1WBs" role="3cqZAp">
             <node concept="17R0WA" id="Rw9t2G1Y90" role="3clFbG">
               <node concept="Xl_RD" id="Rw9t2G1Ya4" role="3uHU7w">
-                <property role="Xl_RC" value="Ram" />
+                <property role="Xl_RC" value="Ram memory consumption" />
               </node>
               <node concept="2OqwBi" id="Rw9t2G1XpS" role="3uHU7B">
                 <node concept="2OqwBi" id="Rw9t2G1WP5" role="2Oq$k0">
@@ -3197,7 +3290,7 @@
             <node concept="22lmx$" id="Rw9t2G218k" role="3clFbG">
               <node concept="17R0WA" id="Rw9t2G218l" role="3uHU7w">
                 <node concept="Xl_RD" id="Rw9t2G218m" role="3uHU7w">
-                  <property role="Xl_RC" value="Network_throughput_out" />
+                  <property role="Xl_RC" value="Network throughput out" />
                 </node>
                 <node concept="2OqwBi" id="Rw9t2G218n" role="3uHU7B">
                   <node concept="2OqwBi" id="Rw9t2G218o" role="2Oq$k0">
@@ -3224,7 +3317,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="Rw9t2G218y" role="3uHU7w">
-                  <property role="Xl_RC" value="Network_throughput_in" />
+                  <property role="Xl_RC" value="Network throughput in" />
                 </node>
               </node>
             </node>
@@ -3288,7 +3381,7 @@
           <node concept="3clFbF" id="5uujG9VCwSi" role="3cqZAp">
             <node concept="17R0WA" id="5uujG9VCz0J" role="3clFbG">
               <node concept="Xl_RD" id="5uujG9VCz1N" role="3uHU7w">
-                <property role="Xl_RC" value="Disk_space" />
+                <property role="Xl_RC" value="Used disk space" />
               </node>
               <node concept="2OqwBi" id="5uujG9VCxyE" role="3uHU7B">
                 <node concept="2OqwBi" id="5uujG9VCx5V" role="2Oq$k0">

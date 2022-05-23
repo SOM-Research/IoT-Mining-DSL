@@ -135,7 +135,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_2() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "application:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Application:");
     editorCell.setCellId("Constant_5say12_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
@@ -235,7 +235,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "memory limit:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Memory limit:");
     editorCell.setCellId("Constant_5say12_f0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -276,7 +276,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_5() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "cpu limit:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "CPU limit:");
     editorCell.setCellId("Constant_5say12_i0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);

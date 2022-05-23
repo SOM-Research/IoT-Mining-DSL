@@ -130,6 +130,7 @@
       </concept>
       <concept id="166834276354177454" name="Mining.structure.Offloading" flags="ng" index="3K8SXd">
         <reference id="166834276354177472" name="container" index="3K8SWz" />
+        <child id="1286545887377715232" name="targetRegion" index="tIsEb" />
         <child id="1286545887377715222" name="targetNode" index="tIsEX" />
       </concept>
     </language>
@@ -216,7 +217,7 @@
     </node>
     <node concept="2Q5TI7" id="MV5QEUHA9Y" role="2Q5TI0">
       <property role="TrG5h" value="CPU consumption" />
-      <property role="1zwx4q" value="CPU" />
+      <property role="1zwx4q" value="cpu" />
     </node>
     <node concept="2Q5TI7" id="MV5QEUHAao" role="2Q5TI0">
       <property role="TrG5h" value="Ram memory consumption" />
@@ -264,6 +265,9 @@
         <ref role="3K8SWz" node="3jDZIhnAwo3" resolve="C_2" />
         <node concept="tIsEy" id="3UygDJRRP39" role="tIsEX">
           <ref role="tIsEA" node="3jDZIhnuAXC" resolve="fog_e1" />
+        </node>
+        <node concept="2L8lu2" id="4DBkKkikiZD" role="tIsEb">
+          <ref role="2L8lrf" node="3UygDJRRLVu" resolve="Example Mine" />
         </node>
       </node>
       <node concept="3eOSWO" id="3UygDJRRP2E" role="2AxvoC">
@@ -357,14 +361,10 @@
       <property role="TrG5h" value="edge_01" />
       <property role="fk49s" value="2000" />
       <property role="fk497" value="16000" />
-      <property role="fk49o" value="1000" />
+      <property role="fk49o" value="1" />
       <property role="fk499" value="2cS6XcGq5Ay/ARM" />
       <property role="fk49r" value="Debian" />
       <property role="fk49l" value="192.168.10.1" />
-      <node concept="2GUnFb" id="3jDZIhnuB15" role="MQ7lO">
-        <property role="TrG5h" value="C_1" />
-        <ref role="MQ7m4" node="3jDZIhnuAZz" resolve="App1" />
-      </node>
       <node concept="2GUnFb" id="3jDZIhnAwo3" role="MQ7lO">
         <property role="TrG5h" value="C_2" />
         <ref role="MQ7m4" node="3jDZIhnuAZ_" resolve="App2" />
@@ -380,7 +380,7 @@
       <property role="TrG5h" value="edge_02" />
       <property role="fk49s" value="2000" />
       <property role="fk497" value="16000" />
-      <property role="fk49o" value="1000" />
+      <property role="fk49o" value="1" />
       <property role="fk499" value="2cS6XcGq5Ay/ARM" />
       <property role="fk49r" value="Debian" />
       <property role="fk49l" value="192.168.10.2" />
@@ -399,7 +399,7 @@
       <property role="TrG5h" value="edge_03" />
       <property role="fk49s" value="2000" />
       <property role="fk497" value="16000" />
-      <property role="fk49o" value="1000" />
+      <property role="fk49o" value="1" />
       <property role="fk499" value="2cS6XcGq5Ay/ARM" />
       <property role="fk49r" value="Debian" />
       <property role="fk49l" value="192.168.10.3" />
@@ -423,7 +423,7 @@
       <property role="fk49r" value="Ubuntu" />
       <property role="fk49s" value="4000" />
       <property role="fk497" value="50000" />
-      <property role="fk49o" value="2000" />
+      <property role="fk49o" value="2" />
       <property role="fk49l" value="192.168.10.10" />
       <node concept="2GUnFb" id="3UygDJRRP0u" role="MQ7lO">
         <property role="TrG5h" value="C_6" />
@@ -452,7 +452,7 @@
       <property role="TrG5h" value="cloud_node" />
       <property role="fk49s" value="16000" />
       <property role="fk497" value="200000" />
-      <property role="fk49o" value="4000" />
+      <property role="fk49o" value="4" />
       <property role="fk49r" value="Ubuntu" />
       <property role="fk49l" value="192.168.10.20" />
     </node>

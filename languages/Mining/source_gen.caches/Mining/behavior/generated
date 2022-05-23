@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="3urelsvwcerp9yqe13i5cmmfr7na80v">
+<product version="3" modelHash="-a1rpoc8edghpx3t8fxe3s38z0nwkxtv">
   <files names="AdaptationRule__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:Check_Point__BehaviorDescriptor.java:Container__BehaviorDescriptor.java:Node__BehaviorDescriptor.java:Region__BehaviorDescriptor.java:Sensor_Type__BehaviorDescriptor.java:Slope__BehaviorDescriptor.java" />
 </product>
 
