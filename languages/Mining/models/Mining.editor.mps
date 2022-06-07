@@ -7894,11 +7894,6 @@
         </node>
       </node>
       <node concept="l2Vlx" id="6CCMDSQwsFp" role="2iSdaV" />
-      <node concept="3F0ifn" id="6CCMDSQwsFw" role="3EZMnx">
-        <node concept="pVoyu" id="6CCMDSQwsFx" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6CCMDSQzDV7">
@@ -15746,7 +15741,7 @@
             <node concept="3EZMnI" id="6CCMDSR7_zy" role="3EZMnx">
               <node concept="VPM3Z" id="6CCMDSR7_zz" role="3F10Kt" />
               <node concept="3F0ifn" id="6CCMDSR7_z$" role="3EZMnx">
-                <property role="3F0ifm" value="ip Address:" />
+                <property role="3F0ifm" value="ip address:" />
               </node>
               <node concept="3F0A7n" id="6CCMDSR7_z_" role="3EZMnx">
                 <ref role="1NtTu8" to="40ag:2cS6XcGq5A6" resolve="ipAddress" />

@@ -474,7 +474,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_8() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "ip Address:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "ip address:");
     editorCell.setCellId("Constant_v4xlx_a3a2a0");
     editorCell.setDefaultText("");
     return editorCell;
