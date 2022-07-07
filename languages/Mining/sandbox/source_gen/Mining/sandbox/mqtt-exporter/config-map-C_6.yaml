@@ -35,10 +35,10 @@ data:
             replacement:    '\1'                        # Optional default '\1'
             action:         'replace'                   # Optional default 'replace'
 
-      - name:     'room_co'
-        help:     'Topic room/co'
+      - name:     'room_temp'
+        help:     'Topic room/temp'
         type:     'gauge'
-        topic:    'room/co'
+        topic:    'room/temp'
         label_configs:
           - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
             separator:      '/'                         # Optional default ';'

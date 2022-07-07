@@ -82,6 +82,9 @@
       </concept>
       <concept id="6711974043599772121" name="Mining.structure.Entry" flags="ng" index="2vjq4d" />
       <concept id="6711974043599772122" name="Mining.structure.Internal" flags="ng" index="2vjq4e" />
+      <concept id="6711974043599772135" name="Mining.structure.Working_Face" flags="ng" index="2vjq4N">
+        <property id="6711974043599772136" name="type" index="2vjq4W" />
+      </concept>
       <concept id="6711974043599772129" name="Mining.structure.Slope" flags="ng" index="2vjq4P">
         <property id="6711974043599772130" name="degree" index="2vjq4Q" />
       </concept>
@@ -288,7 +291,7 @@
       </node>
     </node>
     <node concept="2vjq40" id="3UygDJRRLW6" role="2vjq4X">
-      <property role="TrG5h" value="CheckPoint Room" />
+      <property role="TrG5h" value="Room Checkpoint" />
       <ref role="2vjq43" node="3UygDJRRLVC" resolve="Room" />
       <node concept="fk6Sm" id="3UygDJRRLW7" role="2vjq42">
         <property role="TrG5h" value="s-room-ch4" />
@@ -313,15 +316,15 @@
         <ref role="2Z02Rh" node="3UygDJRRP0J" resolve="room/co2" />
       </node>
       <node concept="fk6Sm" id="3UygDJRRLW9" role="2vjq42">
-        <property role="TrG5h" value="s-room-co" />
+        <property role="TrG5h" value="s-room-temp" />
         <property role="1fGzIU" value="ppm" />
         <property role="xF1DA" value="3000" />
         <property role="fk6TG" value="Draguer" />
         <property role="fk6TD" value="2cS6XcGq7mn/Serial" />
         <property role="2A5aiE" value="52° 33' 30'' N" />
         <property role="2A5aiJ" value="13° 26' 40'' E" />
-        <ref role="fk6Sr" node="5O_Idj2q1BG" />
         <ref role="2Z02Rh" node="3UygDJRRP0M" resolve="room/co" />
+        <ref role="fk6Sr" node="4ONOcanSE6J" resolve="Temp" />
       </node>
       <node concept="fk6So" id="3UygDJRRP0D" role="2vjq42">
         <property role="TrG5h" value="a-room-al" />
@@ -435,7 +438,7 @@
           <property role="TrG5h" value="room/co2" />
         </node>
         <node concept="2ZjsHc" id="3UygDJRRP0M" role="2ZuSZ_">
-          <property role="TrG5h" value="room/co" />
+          <property role="TrG5h" value="room/temp" />
         </node>
         <node concept="2ZjsHc" id="3UygDJRRP0Q" role="2ZuSZ_">
           <property role="TrG5h" value="room/alarm" />
@@ -477,6 +480,14 @@
       <node concept="2vjq48" id="3UygDJRRLVC" role="MQ7lX">
         <property role="TrG5h" value="Room" />
         <property role="2vjq49" value="100" />
+        <node concept="2vjq4N" id="2VK5Gdv1rtA" role="MQ7lX">
+          <property role="TrG5h" value="W-front 1" />
+          <property role="2vjq4W" value="5O_Idj2q1BA/Exploitation" />
+        </node>
+        <node concept="2vjq4N" id="2VK5Gdv1rtx" role="MQ7lX">
+          <property role="TrG5h" value="W-front 2" />
+          <property role="2vjq4W" value="5O_Idj2q1BA/Exploitation" />
+        </node>
       </node>
       <node concept="2vjq4e" id="3UygDJRRLVy" role="MQ7lX">
         <property role="TrG5h" value="Internal" />

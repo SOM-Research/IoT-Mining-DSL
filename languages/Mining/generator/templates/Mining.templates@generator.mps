@@ -1818,6 +1818,10 @@
       <ref role="30HIoZ" to="40ag:2cS6XcGq5uy" resolve="IoT_System" />
       <ref role="3lhOvi" node="2NYVsZULR0o" resolve="prometheus/clusterRole" />
     </node>
+    <node concept="3lhOvk" id="1vojgn60$Eh" role="3lj3bC">
+      <ref role="30HIoZ" to="40ag:2cS6XcGq5uy" resolve="IoT_System" />
+      <ref role="3lhOvi" node="1vojgn5SWey" resolve="start" />
+    </node>
   </node>
   <node concept="356sEV" id="59mvfwECRMN">
     <property role="TrG5h" value="iot-system/pods" />
@@ -4214,7 +4218,7 @@
         <property role="333NGx" value="  " />
         <node concept="356sEK" id="2NYVsZUI7W3" role="383Ya9">
           <node concept="356sEF" id="2NYVsZUI7W4" role="356sEH">
-            <property role="TrG5h" value="resources: [&quot;pods&quot;, &quot;deployments&quot;, &quot;jobs&quot;, &quot;services&quot;, &quot;endpoints&quot;, &quot;nodes&quot;]" />
+            <property role="TrG5h" value="resources: [&quot;pods&quot;, &quot;pods/status&quot;, &quot;deployments&quot;, &quot;jobs&quot;, &quot;services&quot;, &quot;endpoints&quot;, &quot;nodes&quot;]" />
           </node>
           <node concept="2EixSi" id="2NYVsZUI7W6" role="2EinRH" />
         </node>
@@ -9706,6 +9710,255 @@
       </node>
     </node>
     <node concept="n94m4" id="2NYVsZULR0q" role="lGtFl">
+      <ref role="n9lRv" to="40ag:2cS6XcGq5uy" resolve="IoT_System" />
+    </node>
+  </node>
+  <node concept="356sEV" id="1vojgn5SWey">
+    <property role="TrG5h" value="start" />
+    <property role="3Le9LX" value=".sh" />
+    <node concept="356WMU" id="1vojgn5SWeA" role="356KY_">
+      <node concept="356sEK" id="1vojgn5SWeB" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWeC" role="356sEH">
+          <property role="TrG5h" value="#!/bin/bash" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWeE" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWeF" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWeI" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWeJ" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWeK" role="356sEH">
+          <property role="TrG5h" value="# Namespace" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWeM" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWeN" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWeO" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f namespace/" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWeQ" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWeR" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWeU" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWeV" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWeW" role="356sEH">
+          <property role="TrG5h" value="# Prometheus" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWeY" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWeZ" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWf0" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f prometheus/clusterRole.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWf2" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWf3" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWf4" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f prometheus/config-map.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWf6" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWf7" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWf8" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f prometheus/rules.yml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfa" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfb" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfc" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f prometheus/deployment.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfe" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWff" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfg" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f prometheus/service.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfi" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfj" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWfm" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfn" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfo" role="356sEH">
+          <property role="TrG5h" value="# kube-state-metrics" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfq" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfr" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfs" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f kube-state-metrics/" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfu" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfv" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWfy" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfz" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWf$" role="356sEH">
+          <property role="TrG5h" value="# alert-manager" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfA" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfB" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfC" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f alert-manager/config-map.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfE" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfF" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfG" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f alert-manager/deployment.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfI" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfJ" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfK" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f alert-manager/service.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfM" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfN" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWfQ" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfR" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfS" role="356sEH">
+          <property role="TrG5h" value="# node-exporter" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfU" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfV" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWfW" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f node-exporter/daemonset.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWfY" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWfZ" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWg0" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f node-exporter/service.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWg2" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWg3" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWg6" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWg7" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWg8" role="356sEH">
+          <property role="TrG5h" value="# mqtt-exporter" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWga" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgb" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgc" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f mqtt-exporter/config-map.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWge" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgf" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgg" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f mqtt-exporter/deployment.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgi" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgj" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgk" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f mqtt-exporter/service.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgm" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgn" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWgq" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgr" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgs" role="356sEH">
+          <property role="TrG5h" value="# adaptation-engine" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgu" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgv" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgw" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f adaptation-engine/clusterRole.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgy" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgz" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWg$" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f adaptation-engine/deployment.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgA" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgB" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgC" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f adaptation-engine/service.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgE" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgF" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWgI" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgJ" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgK" role="356sEH">
+          <property role="TrG5h" value="# Grafana" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgM" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgN" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgO" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f grafana/config-map.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgQ" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgR" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgS" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f grafana/deployment.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgU" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgV" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWgW" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f grafana/service.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWgY" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWgZ" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWh2" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWh3" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWh4" role="356sEH">
+          <property role="TrG5h" value="# IoT apps" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWh6" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWh7" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWh8" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f iot-system/config-map.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWha" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWhb" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWhc" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f iot-system/pods.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWhe" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWhf" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWhg" role="356sEH">
+          <property role="TrG5h" value="kubectl create -f iot-system/services.yaml" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWhi" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWhj" role="383Ya9">
+        <node concept="2EixSi" id="1vojgn5SWhm" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="1vojgn5SWhn" role="383Ya9">
+        <node concept="356sEF" id="1vojgn5SWho" role="356sEH">
+          <property role="TrG5h" value="echo &quot;Configuration completed&quot;" />
+        </node>
+        <node concept="2EixSi" id="1vojgn5SWhq" role="2EinRH" />
+      </node>
+    </node>
+    <node concept="n94m4" id="1vojgn5SWe$" role="lGtFl">
       <ref role="n9lRv" to="40ag:2cS6XcGq5uy" resolve="IoT_System" />
     </node>
   </node>
