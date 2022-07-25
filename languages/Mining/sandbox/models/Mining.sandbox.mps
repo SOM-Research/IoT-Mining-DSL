@@ -215,8 +215,8 @@
       <property role="1zwx4q" value="latency" />
     </node>
     <node concept="2Q5TI7" id="MV5QEUHA9V" role="2Q5TI0">
-      <property role="TrG5h" value="Availability" />
-      <property role="1zwx4q" value="availability" />
+      <property role="TrG5h" value="Unavailability" />
+      <property role="1zwx4q" value="unavailability" />
     </node>
     <node concept="2Q5TI7" id="MV5QEUHA9Y" role="2Q5TI0">
       <property role="TrG5h" value="CPU consumption" />
@@ -339,7 +339,7 @@
     <node concept="fk4LP" id="3jDZIhnuAZz" role="MQ7lN">
       <property role="TrG5h" value="App1" />
       <property role="MQ7ms" value="500" />
-      <property role="MQ7lF" value="500" />
+      <property role="MQ7lF" value="300" />
       <property role="2ZjsGw" value="8000" />
       <property role="2ZjsG_" value="30021" />
       <property role="2GUnF7" value="iot-system/app1" />
@@ -348,7 +348,7 @@
       <property role="TrG5h" value="App2" />
       <property role="2GUnF7" value="iot-system/app2" />
       <property role="MQ7ms" value="700" />
-      <property role="MQ7lF" value="700" />
+      <property role="MQ7lF" value="300" />
       <property role="2ZjsGw" value="8081" />
       <property role="2ZjsG_" value="30022" />
     </node>
