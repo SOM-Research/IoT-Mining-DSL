@@ -3397,7 +3397,7 @@
             <node concept="3clFbS" id="dF" role="1pnPq1">
               <node concept="3cpWs6" id="dH" role="3cqZAp">
                 <node concept="1nCR9W" id="dI" role="3cqZAk">
-                  <property role="1nD$Q0" value="Mining.constraints.Sensor_Events_Constraints" />
+                  <property role="1nD$Q0" value="Mining.constraints.SensorTypeEvent_Constraints" />
                   <node concept="3uibUv" id="dJ" role="2lIhxL">
                     <ref role="3uigEE" to="ze1i:~ConstraintsDescriptor" resolve="ConstraintsDescriptor" />
                   </node>
@@ -3405,7 +3405,7 @@
               </node>
             </node>
             <node concept="3gn64h" id="dG" role="1pnPq6">
-              <ref role="3gnhBz" to="40ag:5c6$$01qJv7" resolve="Sensor_Events" />
+              <ref role="3gnhBz" to="40ag:5c6$$01qJv7" resolve="SensorTypeEvent" />
             </node>
           </node>
           <node concept="1pnPoh" id="d5" role="1_3QMm">
@@ -6521,7 +6521,7 @@
   </node>
   <node concept="312cEu" id="qX">
     <property role="3GE5qa" value="AdaptationRules" />
-    <property role="TrG5h" value="Sensor_Events_Constraints" />
+    <property role="TrG5h" value="SensorTypeEvent_Constraints" />
     <uo k="s:originTrace" v="n:5982629958615616538" />
     <node concept="3Tm1VV" id="qY" role="1B3o_S">
       <uo k="s:originTrace" v="n:5982629958615616538" />
@@ -6542,7 +6542,7 @@
           <uo k="s:originTrace" v="n:5982629958615616538" />
           <node concept="1BaE9c" id="r7" role="37wK5m">
             <property role="1ouuDV" value="CONCEPTS" />
-            <property role="1BaxDp" value="Sensor_Events$lo" />
+            <property role="1BaxDp" value="SensorTypeEvent$lo" />
             <uo k="s:originTrace" v="n:5982629958615616538" />
             <node concept="2YIFZM" id="r8" role="1Bazha">
               <ref role="1Pybhc" to="2k9e:~MetaAdapterFactory" resolve="MetaAdapterFactory" />
@@ -6561,7 +6561,7 @@
                 <uo k="s:originTrace" v="n:5982629958615616538" />
               </node>
               <node concept="Xl_RD" id="rc" role="37wK5m">
-                <property role="Xl_RC" value="Mining.structure.Sensor_Events" />
+                <property role="Xl_RC" value="Mining.structure.SensorTypeEvent" />
                 <uo k="s:originTrace" v="n:5982629958615616538" />
               </node>
             </node>

@@ -115,7 +115,7 @@
     <classNode dependClassName="Mining.constraints.Node_Constraints" />
     <classNode dependClassName="Mining.constraints.Region_Constraints" />
     <classNode dependClassName="Mining.constraints.Region_Reference_Constraints" />
-    <classNode dependClassName="Mining.constraints.Sensor_Events_Constraints" />
+    <classNode dependClassName="Mining.constraints.SensorTypeEvent_Constraints" />
     <classNode dependClassName="Mining.constraints.WorkerReference_Constraints" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
@@ -229,7 +229,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="Mining.constraints.Sensor_Events_Constraints">
+  <dependency className="Mining.constraints.SensorTypeEvent_Constraints">
     <classNode dependClassName="Mining.behavior.Sensor_Type__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />

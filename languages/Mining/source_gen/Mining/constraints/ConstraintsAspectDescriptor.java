@@ -35,7 +35,7 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
       case 7:
         return new Region_Reference_Constraints();
       case 8:
-        return new Sensor_Events_Constraints();
+        return new SensorTypeEvent_Constraints();
       case 9:
         return new WorkerReference_Constraints();
       default:
