@@ -107,7 +107,7 @@
       <concept id="917352696265870573" name="Mining.structure.Metric" flags="ng" index="2Q5TI7">
         <property id="3812858816218525694" name="label" index="1zwx4q" />
       </concept>
-      <concept id="917352696268172191" name="Mining.structure.Sensor_Event" flags="ng" index="2QtbNP">
+      <concept id="917352696268172191" name="Mining.structure.SensorEvent" flags="ng" index="2QtbNP">
         <reference id="917352696268172192" name="sensor" index="2QtbNa" />
       </concept>
       <concept id="917352696258600852" name="Mining.structure.QoS_Event" flags="ng" index="2QxCzY">
@@ -128,7 +128,7 @@
         <property id="1002105271165582843" name="message" index="16HGMk" />
         <reference id="1002105271165526994" name="device" index="16HxaX" />
       </concept>
-      <concept id="5982629958613708481" name="Mining.structure.Exp_Node" flags="ng" index="1iKjM1">
+      <concept id="5982629958613708481" name="Mining.structure.QoSNode" flags="ng" index="1iKjM1">
         <reference id="5982629958613708482" name="node" index="1iKjM2" />
       </concept>
       <concept id="166834276354177454" name="Mining.structure.Offloading" flags="ng" index="3K8SXd">
