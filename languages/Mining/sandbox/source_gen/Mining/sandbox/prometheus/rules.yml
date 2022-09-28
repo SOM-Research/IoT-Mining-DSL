@@ -14,7 +14,7 @@ data:
         expr: room_ch4 > 3
         for: 5s
         annotations:
-          adaptations: '{"operate_actuator_test":{"broker_ip":"192.168.10.10","port":30023,"topic":"room/alarm","message":"on"}}'
+          adaptations: '{"operate_actuator_0.5936407199795086":{"broker_ip":"192.168.10.10","port":30023,"topic":"room/alarm","message":"on"}}'
         labels:
           severity: 'critical'
           actions: 'all'
@@ -27,7 +27,7 @@ data:
         expr: 100 - (avg by(node_hostname) (rate(node_cpu_seconds_total{mode="idle",node_hostname="edge_01"}[30s])) * 100) > 80
         for: 1m
         annotations:
-          adaptations: '{"offloading_0.6846099343464573":{"pod_name":"C_2","image":"iot-system/app2","namespace":"default","requirements":{"memory":"700M","cpu":"300m"},"hosts":{"node":{"operator":"In","values":["fog_01"]},"region":{"operator":"In","values":["Example Mine"]},"cluster":{"operator":"In","values":[]}}}}'
+          adaptations: '{"offloading_0.975092548967118":{"pod_name":"C_2","image":"iot-system/app2","namespace":"default","requirements":{"memory":"700M","cpu":"300m"},"volumes":[],"hosts":{"node":{"operator":"In","values":["fog_01"]},"region":{"operator":"In","values":["Example Mine"]},"cluster":{"operator":"In","values":[]}}}}'
         labels:
           severity: 'critical'
           actions: 'all'
