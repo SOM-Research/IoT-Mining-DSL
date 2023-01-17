@@ -7,7 +7,7 @@ You can find in this repository the DSL implemented in MPS, a sandbox model of a
 
 <img src="/images/mine-structure-model.png" alt="Mine structure model" style="height: 100%; width:100%;"/>
 
-The metamodel (concrete syntax) of the DSL is summarised in the following figure.
+The metamodel (abstract syntax) of the DSL is summarised in the following figure.
 
 <img src="/images/metamodel.png" alt="Metamodel" style="height: 100%; width:100%;"/>
 
